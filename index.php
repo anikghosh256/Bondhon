@@ -132,7 +132,7 @@
       <div class="container">
         <div class="row team_members">
 
-          <div class="col s12 m4">
+          <div class="team_member_col col s12 m4 ">
 
             <div class="team_member">
               <div class="team_member_img">
@@ -163,7 +163,7 @@
 
           </div>
 
-          <div class="col s12 m4">
+          <div class="team_member_col col s12 m4 ">
 
             <div class="team_member">
               <div class="team_member_img">
@@ -193,7 +193,7 @@
 
           </div>
 
-          <div class="col s12 m4">
+          <div class="team_member_col col s12 m4 ">
 
             <div class="team_member">
               <div class="team_member_img">

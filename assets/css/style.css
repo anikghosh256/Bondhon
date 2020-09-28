@@ -266,7 +266,16 @@ p {
   box-shadow: 2px 2px 12px 0px #c7c7c7;
   margin-bottom: 15px;
 }
+.team_member_img{
+  width: 100%;
+  overflow: hidden;
+  height: 190px;
+}
 
+.team_member_img img{
+  width: 100%;
+  min-height: 190px;
+}
 
 .team_member_details{
   text-align: left;
@@ -288,6 +297,7 @@ p {
 }
 .team_member_short_details {
   width: 100%;
+  min-height: 55px;
 }
 .team_member_short_details p{
   margin: 0px;
@@ -452,6 +462,9 @@ li.s-icon>a:hover{
 .page-footer a{
   color: var(--footer-fc-a);
 }
+.page-footer a:hover{
+  text-decoration: underline;
+}
 
 
 /*footer area end*/
@@ -506,6 +519,14 @@ ul.work_count_2 li:nth-last-child(-n+2) {
     background: var(--parallax-bg);
   }
 }
+
+@media only screen and (max-width: 736px) and (min-width: 600px) {
+  .row .team_member_col{
+    width: 50% !important;
+  }
+}
+
+
 @media only screen and (max-width: 665px) {
   .recent_work_items .work{
     width: 100%;
@@ -544,5 +565,38 @@ ul.work_count_2 li:nth-last-child(-n+2) {
 
 #materialbox-overlay {
   background-color: var(--parallax-bg);
+}
+
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+  margin:25px 0px;
+}
+.hr-text:before {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#818078), to(transparent));
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
 }
 
