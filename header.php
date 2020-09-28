@@ -38,19 +38,19 @@
   </style>
   
 </head>
-<body>
+<body id="home">
   <nav class="main_nav" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="<?php bloginfo('url'); ?>" class="brand-logo"><?php bloginfo('name'); ?></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#recent_work">Recent Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact_us">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a class="sidenav-close" href="<?php bloginfo('url'); ?>">Home</a></li>
+        <li><a class="sidenav-close" href="#home">Home</a></li>
         <li><a class="sidenav-close" href="#recent_work">Recent Work</a></li>
         <li><a class="sidenav-close" href="#about">About</a></li>
         <li><a class="sidenav-close" href="#contact_us">Contact</a></li>

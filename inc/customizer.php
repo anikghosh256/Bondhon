@@ -140,6 +140,107 @@ Kirki::add_field( 'bondhon_customize_options', [
 ] );
 
 
+
+
+
+/*
+* adding team members area edit section 
+*/
+Kirki::add_section( 'bondhon_team_members_edit', array(
+    'title'          => esc_html__( 'Team Members', 'bondhon' ),
+    'description'    => esc_html__( 'Add your team members.', 'bondhon' ),
+    'panel'          => 'bondhon_customizer',
+    'priority'       => 170,
+) );
+
+Kirki::add_field( 'bondhon_customize_options', [
+    'type'        => 'toggle',
+    'settings'    => 'bondhon_show_team_members',
+    'label'       => esc_html__( 'Show the this area', 'bondhon' ),
+    'section'     => 'bondhon_team_members_edit',
+    'default'     => '1',
+    'priority'    => 5,
+] );
+Kirki::add_field( 'bondhon_customize_options', [
+    'type'     => 'text',
+    'settings' => 'bondhon_team_members_title',
+    'label'    => esc_html__( 'Edit Title', 'bondhon' ),
+    'section'  => 'bondhon_team_members_edit',
+    'default'  => esc_html__( 'Our Team Members', 'bondhon' ),
+    'priority' => 7,
+    'partial_refresh'    => [
+        'bondhon_team_members_title' => [
+            'selector'        => '.team_area_head h1',
+            'render_callback' => function() {
+                return get_theme_mod( 'bondhon_team_members_title' );
+            },
+        ],
+    ],
+] );
+
+Kirki::add_field( 'bondhon_customize_options', [
+    'type'        => 'repeater',
+    'label'       => esc_html__( 'Team Members', 'bondhon' ),
+    'section'     => 'bondhon_team_members_edit',
+    'priority'    => 10,
+    'row_label' => [
+        'type'  => 'text',
+        'value' => esc_html__( 'Team member', 'bondhon' ),
+    ],
+    'button_label' => esc_html__('Add new', 'bondhon' ),
+    'settings'     => 'bondhon_team_members',
+    'fields' => [
+        'member_name' => [
+            'type'        => 'text',
+            'label'       => esc_html__( 'Name', 'bondhon' ),
+            'default'     => '',
+        ],
+        'member_position' => [
+            'type'        => 'text',
+            'label'       => esc_html__( 'Position', 'bondhon' ),
+            'default'     => '',
+        ],
+        'member_des'  => [
+            'type'        => 'text',
+            'label'       => esc_html__( 'Short Details', 'bondhon' ),
+            'default'     => '',
+        ],
+        'member_photo'  => [
+            'type'        => 'image',
+            'label'       => esc_html__( 'Member Photo', 'bondhon' ),
+            'description' => esc_html__( 'min-width 300px and min-height should be 200px.', 'kirki' ),
+            'default'     => '',
+        ],
+        'member_fb_link'  => [
+            'type'        => 'link',
+            'label'       => esc_html__( 'Facebook Profile Link', 'bondhon' ),
+            'description' => esc_html__( 'If don\'t have, leave it blank.', 'kirki' ),
+            'default'     => '',
+        ],
+        'member_tw_link'  => [
+            'type'        => 'link',
+            'label'       => esc_html__( 'Twitter Profile Link', 'bondhon' ),
+            'description' => esc_html__( 'If don\'t have, leave it blank.', 'kirki' ),
+            'default'     => '',
+        ],
+        'member_ig_link'  => [
+            'type'        => 'link',
+            'label'       => esc_html__( 'Instagram Profile Link', 'bondhon' ),
+            'description' => esc_html__( 'If don\'t have, leave it blank.', 'kirki' ),
+            'default'     => '',
+        ],
+    ],
+    'partial_refresh'    => [
+        'bondhon_team_members' => [
+            'selector'        => '.team_members',
+            'render_callback' => function() {
+                return get_theme_mod( 'bondhon_team_members');
+            },
+        ],
+    ],
+] );
+
+
 /*
 * adding social-links area edit section 
 */
@@ -165,7 +266,7 @@ Kirki::add_field( 'bondhon_customize_options', [
         [
             'link_title' => esc_html__( 'Facebook', 'bondhon' ),
             'fa_class'  => 'fa-facebook',
-            'link_url'  => 'https://facebook.com/anikghosh356',
+            'link_url'  => 'https://facebook.com/anikghosh256',
         ],
     ],
     'fields' => [

@@ -9,7 +9,7 @@
                 echo $site_copyright;
                 else:?>
 
-              copyright 2019 &copy; <a href="#"  ><?php bloginfo('name'); ?></a>
+              copyright 2019 &copy; <a href="#home"  ><?php bloginfo('name'); ?></a>
 
               <?php endif; ?>
          

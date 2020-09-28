@@ -7,6 +7,8 @@ nav ul a,
 nav .brand-logo {
   color: var( --main-fc);
   overflow: hidden;
+}
+nav .brand-logo {
   font-family: 'Kaushan Script', cursive;
 }
 nav ul li a{
@@ -294,6 +296,7 @@ p {
   font-size: 14px;
   font-family: cursive;
   color: #b3b3b3;
+  text-transform: uppercase;
 }
 .team_member_short_details {
   width: 100%;
@@ -353,9 +356,6 @@ p {
   content: " ";
   display: block;
 }
-
-
-
 
 
 

@@ -120,11 +120,11 @@
 </div>
 
 <!-- our team area -->
-
+<?php if ( true == get_theme_mod( 'bondhon_show_team_members', true ) ) : ?>
   <div class="team_area_wrapper" id="team_area">
     <div class="container">
       <div class="team_area_head">
-        <h1>Our Team Members</h1>
+        <h1><?php echo get_theme_mod( 'bondhon_team_members_title','Our Team Members'); ?></h1>
       </div>
     </div>
 
@@ -132,6 +132,13 @@
       <div class="container">
         <div class="row team_members">
 
+          <?php
+            $team_members = get_theme_mod( 'bondhon_team_members', null );
+          ?>
+
+          <?php if ($team_members == null): ?>
+            
+          
           <div class="team_member_col col s12 m4 ">
 
             <div class="team_member">
@@ -152,7 +159,7 @@
                     <i class="fab fa-facebook-square"></i>
                   </a>
                   <a class="team_member_social_link" href="#">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fab fa-twitter-square"></i>
                   </a>
                   <a class="team_member_social_link" href="#">
                     <i class="fab fa-instagram"></i>
@@ -182,7 +189,7 @@
                     <i class="fab fa-facebook-square"></i>
                   </a>
                   <a class="team_member_social_link" href="#">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-twitter-square"></i>
                   </a>
                   <a class="team_member_social_link" href="#">
                     <i class="fab fa-instagram"></i>
@@ -222,6 +229,55 @@
             </div>
 
           </div>
+          <?php else: ?>
+
+            <?php foreach ($team_members as $team_member): ?>
+
+          <div class="team_member_col col s12 m4 ">
+
+            <div class="team_member">
+              <div class="team_member_img">
+                <?php if ($team_member['member_photo'] != ''): ?>
+                  <img src="<?php echo get_the_guid($team_member['member_photo']); ?>">
+                <?php else: ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/team/3.jpg">
+                <?php endif ?>
+                
+              </div>
+              <div class="team_member_details">
+                <div class="team_member_name_position">
+                  <h2><?php echo $team_member['member_name']; ?></h2>
+                  <p><?php echo $team_member['member_position']; ?></p>
+                </div>
+                <div class="team_member_short_details">
+                  <p><?php echo $team_member['member_des']; ?></p>
+                </div>
+                <div class="team_member_social_links">
+                  <?php if ($team_member['member_fb_link']): ?>
+                  <a class="team_member_social_link" href="<?php echo $team_member['member_fb_link']; ?>">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                  <?php endif ?>
+                  <?php if ($team_member['member_tw_link']): ?>
+                  <a class="team_member_social_link" href="<?php echo $team_member['member_tw_link']; ?>">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                  <?php endif ?>
+                  <?php if ($team_member['member_ig_link']): ?>
+                  <a class="team_member_social_link" href="<?php echo $team_member['member_ig_link']; ?>">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <?php endif ?>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+              
+            <?php endforeach ?>
+
+          <?php endif ?>
 
 
         </div>
@@ -230,6 +286,8 @@
   </div>
 
   <hr class="hr-text" data-content="And">
+
+<?php endif; ?>
 
 
 <!-- our team area end -->
@@ -283,7 +341,7 @@
               [
                 'link_title' => esc_html__( 'Facebook', 'bondhon' ),
                 'fa_class'  => 'fa-facebook',
-                'link_url'  => 'https://facebook.com/anikghosh356',
+                'link_url'  => 'https://facebook.com/anikghosh256',
               ],
             ];
 
