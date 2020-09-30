@@ -52,6 +52,8 @@ p {
   background-repeat: no-repeat;
   background-position: bottom;
   padding-top: 65px;
+  background-size: contain;
+  background-position: bottom;
 }
 .showcase_text>h1{
   font-family: 'Kaushan Script', cursive;
@@ -115,6 +117,7 @@ p {
   background: var(--main-fc);
   background-repeat: no-repeat, repeat;
   overflow: hidden;
+  background-size: contain, auto;
 }
 .recent_work_wrapper:after{
   background-color: var(--main-fc);
@@ -334,6 +337,7 @@ p {
   color: #000;
   text-align: center;
   padding-bottom: 40px;
+  background-size: cover;
 }
 .contact_wrapper_before{
   background: var(--main-bg);

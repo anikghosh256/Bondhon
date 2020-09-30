@@ -5,7 +5,7 @@
 <!--showcase area-->
 <?php if ( true == get_theme_mod( 'bondhon_show_showcase', true ) ) : ?>
   
-  <div class="parallax-container valign-wrapper showcase_back" style="min-height: 100vh; background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_1.png');">
+  <div class="parallax-container valign-wrapper showcase_back" style="min-height: 100vh; background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_1.webp');">
     <div class="section no-pad-bot ">
       <div class="container">
         <br><br>
@@ -71,7 +71,7 @@
 
 <!--recent works  area -->
 
-  <div class="recent_work_wrapper" id="recent_work" style="background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_5.png'), url('<?php echo get_template_directory_uri(); ?>/image/pattern.png');">
+  <div class="recent_work_wrapper" id="recent_work" style="background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_5.webp'), url('<?php echo get_template_directory_uri(); ?>/image/pattern.png');">
     <div class="container">
       <div class="recent_work_head">
         <h1>Recent Work's</h1>
@@ -143,7 +143,7 @@
 
             <div class="team_member">
               <div class="team_member_img">
-                <img src="<?php echo get_template_directory_uri(); ?>/image/team/1.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/team/1.jpg" alt="team member img">
               </div>
               <div class="team_member_details">
                 <div class="team_member_name_position">
@@ -174,7 +174,7 @@
 
             <div class="team_member">
               <div class="team_member_img">
-                <img src="<?php echo get_template_directory_uri(); ?>/image/team/2.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/team/2.jpg" alt="team member img">
               </div>
               <div class="team_member_details">
                 <div class="team_member_name_position">
@@ -204,7 +204,7 @@
 
             <div class="team_member">
               <div class="team_member_img">
-                <img src="<?php echo get_template_directory_uri(); ?>/image/team/3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/team/3.jpg" alt="team member img">
               </div>
               <div class="team_member_details">
                 <div class="team_member_name_position">
@@ -212,7 +212,7 @@
                   <p>Editor</p>
                 </div>
                 <div class="team_member_short_details">
-                  <p>Stack with photoshop.</p>
+                  <p>Stuck with photoshop.</p>
                 </div>
                 <div class="team_member_social_links">
                   <a class="team_member_social_link" href="#">
@@ -238,9 +238,9 @@
             <div class="team_member">
               <div class="team_member_img">
                 <?php if ($team_member['member_photo'] != ''): ?>
-                  <img src="<?php echo get_the_guid($team_member['member_photo']); ?>">
+                  <img src="<?php echo get_the_guid($team_member['member_photo']); ?>" alt="photo of <?php echo $team_member['member_name']; ?>">
                 <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/team/3.jpg">
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/team/3.jpg" alt="team member img">
                 <?php endif ?>
                 
               </div>
@@ -300,7 +300,7 @@
 
 
   <div class="contact_wrapper_before"></div>
-  <div class="parallax-container valign-wrapper contact_wrapper" id="contact_us" style="min-height: 100vh;background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_2.png');">
+  <div class="parallax-container valign-wrapper contact_wrapper" id="contact_us" style="min-height: 100vh;background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_2.webp');">
     <div class="section no-pad-bot ">
       <div class="contact_d container">
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -33,7 +33,7 @@
       }
     
     .recent_work_wrapper:after{
-      background: url('<?php echo get_template_directory_uri(); ?>/image/divider_3.png');
+      background: url('<?php echo get_template_directory_uri(); ?>/image/divider_3.webp');
     }
   </style>
   
@@ -45,14 +45,18 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#home">Home</a></li>
         <li><a href="#recent_work">Recent Work</a></li>
+        <?php if ( true == get_theme_mod( 'bondhon_show_what_we_do', true ) ) : ?>
         <li><a href="#about">About</a></li>
+        <?php endif; ?>
         <li><a href="#contact_us">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a class="sidenav-close" href="#home">Home</a></li>
         <li><a class="sidenav-close" href="#recent_work">Recent Work</a></li>
-        <li><a class="sidenav-close" href="#about">About</a></li>
+        <?php if ( true == get_theme_mod( 'bondhon_show_what_we_do', true ) ) : ?>
+        <li><a class="sidenav-close" href="#about">About</a></li>         
+        <?php endif; ?>
         <li><a class="sidenav-close" href="#contact_us">Contact</a></li>
       </ul>
       <a data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>

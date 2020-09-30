@@ -3,7 +3,7 @@
 /* adding styles and scripts */
 function ag_bondhon_scripts() {
 	
-	wp_enqueue_style( 'meterialize-css', get_template_directory_uri() . '/assets/css/materialize.min.css', array(), wp_get_theme()->get( 'Version' )  );
+	wp_enqueue_style( 'meterialize-css', get_template_directory_uri() . '/assets/css/materialize.min.a.css', array(), wp_get_theme()->get( 'Version' )  );
 	wp_enqueue_style( 'bondhon-core-style', get_template_directory_uri() . '/assets/css/style.min.css', array(), wp_get_theme()->get( 'Version' )  );
 
     wp_enqueue_style( 'bondhon-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' )  );
