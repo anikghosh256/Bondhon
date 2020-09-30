@@ -33,7 +33,7 @@
       }
     
     .recent_work_wrapper:after{
-      background: url('<?php echo get_template_directory_uri(); ?>/image/divider_3.webp');
+      background: url('<?php echo get_template_directory_uri(); ?>/image/divider_3.png');
     }
   </style>
   

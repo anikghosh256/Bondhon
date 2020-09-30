@@ -5,7 +5,7 @@
 <!--showcase area-->
 <?php if ( true == get_theme_mod( 'bondhon_show_showcase', true ) ) : ?>
   
-  <div class="parallax-container valign-wrapper showcase_back" style="min-height: 100vh; background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_1.webp');">
+  <div class="parallax-container valign-wrapper showcase_back" style="min-height: 100vh; background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_1.png');">
     <div class="section no-pad-bot ">
       <div class="container">
         <br><br>
@@ -71,7 +71,7 @@
 
 <!--recent works  area -->
 
-  <div class="recent_work_wrapper" id="recent_work" style="background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_5.webp'), url('<?php echo get_template_directory_uri(); ?>/image/pattern.png');">
+  <div class="recent_work_wrapper" id="recent_work" style="background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_5.png'), url('<?php echo get_template_directory_uri(); ?>/image/pattern.png');">
     <div class="container">
       <div class="recent_work_head">
         <h1>Recent Work's</h1>
@@ -300,7 +300,7 @@
 
 
   <div class="contact_wrapper_before"></div>
-  <div class="parallax-container valign-wrapper contact_wrapper" id="contact_us" style="min-height: 100vh;background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_2.webp');">
+  <div class="parallax-container valign-wrapper contact_wrapper" id="contact_us" style="min-height: 100vh;background-image: url('<?php echo get_template_directory_uri(); ?>/image/divider_2.png');">
     <div class="section no-pad-bot ">
       <div class="contact_d container">
 
