@@ -1,2 +1,2 @@
 # Bondhon
-A wp theme. This is a theme based on a photography team. 
+A wp theme. This is a theme for photography team. 

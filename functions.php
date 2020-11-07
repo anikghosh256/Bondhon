@@ -55,7 +55,7 @@ function bondhon_create_extra_table(){
 
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
-    $table_name = $wpdb->prefix . "form_data";  //get the database table prefix to create my new table
+    $table_name = $wpdb->prefix . "form_data";
 
     $sql = "CREATE TABLE $table_name (
       id int(10) unsigned NOT NULL AUTO_INCREMENT,

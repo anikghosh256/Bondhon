@@ -298,48 +298,6 @@ Kirki::add_field( 'bondhon_customize_options', [
 
 
 
-/*
-* adding copyright area edit section 
-*/
-Kirki::add_section( 'bondhon_copyright_edit', array(
-    'title'          => esc_html__( 'Edit copyright', 'bondhon' ),
-    'panel'          => 'bondhon_customizer',
-    'priority'       => 200,
-) );
-
-Kirki::add_field( 'bondhon_customize_options', [
-    'type'        => 'text',
-    'settings'    => 'bondhon_copyright_text',
-    'label'       => esc_html__( 'Copyright text', 'bondhon' ),
-    'section'     => 'bondhon_copyright_edit',
-    'default'     => 'copyright 2019 &copy; <a href="#"  >Bodhan</a>',
-    'priority'    => 9,
-    'partial_refresh'    => [
-        'bondhon_copyright_text' => [
-            'selector'        => '.copyright-area',
-            'render_callback' => function() {
-                return get_theme_mod( 'bondhon_copyright_text');
-            },
-        ],
-    ],
-] );
-
-Kirki::add_field( 'bondhon_customize_options', [
-    'type'        => 'text',
-    'settings'    => 'bondhon_bottom_right_text',
-    'label'       => esc_html__( 'Bottom right side text', 'bondhon' ),
-    'section'     => 'bondhon_copyright_edit',
-    'default'     => 'Template Made by <a class="" href="#" >Anik Ghosh</a>',
-    'priority'    => 9,
-    'partial_refresh'    => [
-        'bondhon_bottom_right_text' => [
-            'selector'        => '.bottom-right-side',
-            'render_callback' => function() {
-                return get_theme_mod( 'bondhon_bottom_right_text');
-            },
-        ],
-    ],
-] );
 
 
 /*
