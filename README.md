@@ -8,4 +8,4 @@ A wp theme. This is a theme for photography team.
 
 ## Full view
 
-![Full View](fullview.jpg)
+![Full View](fullview.png)
